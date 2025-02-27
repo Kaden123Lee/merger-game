@@ -1,2 +1,7 @@
-"""KYS
-i wnat to die"""
+def main():
+    print("hello")
+if __name__ == "__main__":
+    main()
+
+
+
