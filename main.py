@@ -23,7 +23,7 @@ while x.can_win() and playing:
         print("Goodbye!")
         playing = False
     elif user_input.lower() == "m":
-        print("Merge")
+        print(" ")
     elif user_input.lower() == "p":
         print("Place")
     else:
