@@ -25,6 +25,7 @@ while x.can_win() and playing:
     elif user_input.lower() == "m":
         print(" ")
     elif user_input.lower() == "p":
+        x.place_new_random()
         print("Place")
     else:
         print("Invalid Command")
