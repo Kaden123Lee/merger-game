@@ -1,7 +1,7 @@
 import random
 
 class Board:
-    def __init__(self, size=5):
+    def __init__(self, size=4):
         """
         Initializes a square game board with the specified size (default 5x5).
         Attributes:
@@ -10,7 +10,8 @@ class Board:
             num_empty (int): Tracks the number of empty cells (0s) on the board.
             highest_piece (int): Tracks the highest value piece on the board (initialized to 0).
         """
-        self.board = []
+        self.board = [] 
+
         self.size = size
         self.num_empty = size**2  # All cells start empty
         self.highest_piece = 0    # No pieces initially
@@ -19,6 +20,16 @@ class Board:
             self.board.append([]) 
             for column in range(size): 
                 self.board[row].append(0) 
+
+    def convert_to_1D(self):
+        oneD = []
+        for i in self.board:
+            for j in i:
+                oneD.append(j)
+        return oneD
+    
+    def getBoard(self):
+        return self.board
 
     def weightedChoice(self):
         """
